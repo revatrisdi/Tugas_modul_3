@@ -74,6 +74,7 @@ public class Order {
         System.out.printf("Pajak: Rp %.2f%n", calculateSubtotal() * taxRate);
         System.out.printf("Diskon: Rp %.2f%n", discount);
         System.out.printf("Total: Rp %.2f%n", calculateTotal());
+
     }
 
     public static void main(String[] args) {

@@ -73,17 +73,4 @@ public class Employee {
         System.out.println("Potongan: Rp " + calculateDeductions());
         System.out.println("Gaji Bersih: Rp " + calculateNetSalary());
     }
-
-    /**
-     * Method utama untuk menjalankan aplikasi dan membuat contoh objek Employee.
-     *
-     * @param args Argumen baris perintah
-     */
-    public static void main(String[] args) {
-        // Membuat objek Employee
-        Employee employee = new Employee("Budi", 5000000, 1000000, 500000, 0.10, 0.02);
-
-        // Menampilkan rincian gaji
-        employee.printSalaryDetails();
-    }
 }

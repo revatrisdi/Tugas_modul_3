@@ -38,6 +38,7 @@ public class Order {
     public double calculateSubtotal() {
         double subtotal = 0;
         for (OrderItem item : orderItems) {
+            //custom live template totalbelanjasebelumkenapajak
             subtotal += item.calculateItemTotal();
         }
         return subtotal;
@@ -51,7 +52,7 @@ public class Order {
     public double calculateTotal() {
         double subtotal = calculateSubtotal();
 
-        // Menggunakan Custom Live Template calcTotal
+        //custom live template totalbelanjasesudahkenapajak
         double total = subtotal + (subtotal * taxRate) - discount;
 
         return total;
